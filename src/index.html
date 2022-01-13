@@ -7,7 +7,17 @@
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
-  <title>New site</title>
+  <!--metatextblock-->
+  <title>Interlir IP Networks marketplace</title>
+  <meta name="description" content="Interlir IP Networks marketplace" />
+  <meta property="og:url" content="https://interlir.com" />
+  <meta property="og:title" content="Interlir IP Networks marketplace" />
+  <meta property="og:description" content="Interlir IP Networks marketplace" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/og.jpeg" />
+  <link rel="canonical" href="https://interlir.com">
+  <!--/metatextblock-->
+  @include('partials/head-style.html')
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
@@ -16,8 +26,10 @@
 <body>
   <div class="site-container">
     @include('partials/header.html')
+
     @include('partials/footer.html')
   </div>
+  @include('partials/foot-scripts.html')
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

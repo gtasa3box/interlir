@@ -1,0 +1,78 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    &__elem {
+        position: relative;
+        a {
+            color: #ffffff;
+            font-weight: 400;
+            text-decoration: none;
+            font-family: 'Open Sans',Arial,sans-serif;
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
+            transition: 0.3s ease;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        &_before {
+            position: relative;
+            &:before {
+                content: ' ';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 4px 3px 0 3px;
+                position: absolute;
+                top: 51%;
+                right: 3px;
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+                border-color: transparent transparent transparent transparent;
+                border-top-color: inherit;
+                transition: transform 0.3s;
+            }
+            &.active {
+                &:before {
+                    transform: translateY(-50%) rotate(180deg);
+                }
+            }
+        }
+    }
+    &__drop {
+        display: none;
+        position: absolute;
+        background-color: white;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 30px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &.active {
+            display: flex;
+        }
+        &-elem {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            a {
+                display: block;
+                color: #000;
+            }
+        }
+        &-tringle {
+            position: absolute;
+            border: solid transparent;
+            border-width: 10px;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom-color: #fff;
+        }
+    }
+}
