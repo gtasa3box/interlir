@@ -1,0 +1,48 @@
+.intro {
+    min-height: 910px;
+    height: 100vh;
+    position: relative;
+    background-image: url(../img/intro/back-grad.png);
+    background-size: cover;
+    position: relative;
+    &__content {
+        padding-top: 270px;
+        display: flex;
+    }
+    &__info {
+
+    }
+    &__title {
+        font-weight: 700;
+        color: #000000;
+        font-size: 86px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.1;
+    }
+    &__text {
+        color: #000000;
+        font-size: 16px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.5;
+        font-weight: 400;
+        opacity: 0.45;
+        max-width: 536px;
+        margin: 30px 0;
+    }
+    &__btn {
+
+    }
+    &__img {
+        display: block;
+        background-image: url(../img/intro/back.jpg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 902px;
+        height: 640px;
+    }
+}
