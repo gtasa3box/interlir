@@ -76,6 +76,7 @@
             margin-right: 20px;
             margin-bottom: 20px;
             width: 45%;
+            padding-left: 45px;
             a {
                 font-family: 'Open Sans',Arial,sans-serif;
                 font-size: 18px;
@@ -92,6 +93,46 @@
                 font-weight: 400;
                 color: #000;
             }
+        }
+    }
+    .nav-before-img {
+        position: relative;
+        display: block;
+        &:before {
+            content: '';
+            position: absolute;
+            top:0;
+            left: -45px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .nav-before-img_time {
+        &:before {
+            background-image: url(../img/time-icon.svg);
+        }
+    }
+    .nav-before-img_time2 {
+        &:before {
+            background-image: url(../img/time2-icon.svg);
+        }
+    }
+    .nav-before-img_smile {
+        &:before {
+            background-image: url(../img/smile-icon.svg);
+        }
+    }
+    .nav-before-img_box {
+        &:before {
+            background-image: url(../img/box-icon.svg);
+        }
+    }
+    .nav-before-img_courier {
+        &:before {
+            background-image: url(../img/courier-icon.svg);
         }
     }
 }
