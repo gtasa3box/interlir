@@ -1,0 +1,34 @@
+.solution {
+    min-height: 760px;
+    height: 890px;
+    background-image: url(../img/solution/back.png);
+    background-size: cover;
+    background-position: right bottom;
+    background-attachment: scroll;
+    background-color: #f5fafe;
+    padding-top: 120px;
+    position: relative;
+    overflow: hidden;
+    &__content {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/solution/back-img.png);
+            background-size: cover;
+            width: 1060px;
+            height: 994px;
+            left: 150px;
+            top: 70px;
+        }
+    }
+    &__text {
+        color: #000000;
+        font-size: 18px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.55;
+        font-weight: 400;
+        max-width: 710px;
+        margin-top: 30px
+    }
+}

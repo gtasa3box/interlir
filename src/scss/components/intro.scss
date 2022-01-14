@@ -4,7 +4,10 @@
     position: relative;
     background-image: url(../img/intro/back-grad.png);
     background-size: cover;
+    background-position: left top;
+    background-attachment: scroll;
     position: relative;
+    background-color: white;
     &__content {
         padding-top: 220px;
         display: flex;

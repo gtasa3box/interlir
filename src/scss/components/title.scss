@@ -1,0 +1,17 @@
+.title {
+    color: #3e13ec;
+    font-size: 14px;
+    font-family: 'Open Sans',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    &-block {
+        color: #000000;
+        font-size: 40px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.2;
+        font-weight: 700;
+        max-width: 801px;
+        margin-top: 40px;
+    }
+}
