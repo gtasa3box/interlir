@@ -1,6 +1,7 @@
 .why {
     min-height: 728px;
     height: 100vh;
+    background-color: #f5fafe;
     &__title {
         color: #000000;
         font-size: 46px;
@@ -8,5 +9,49 @@
         line-height: 1.2;
         font-weight: 700;
     }
-    
+    &__title {
+        color: black;
+        font-size: 40px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.2;
+        font-weight: 700;
+        margin: 40px 0 50px;
+    }
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__elem {
+        width: 45%;
+        display: flex;
+        margin-bottom: 40px;
+    }
+    &__img {
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 150px;
+        height: 150px;
+        flex: none;
+    }
+    &__info {
+
+    }
+    &__smalltitle {
+        color: #000000;
+        font-size: 20px;
+        font-family: 'Arial',Arial,sans-serif;
+        line-height: 1.55;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        margin-bottom: 20px;
+    }
+    &__text {
+        color: #000000;
+        font-size: 14px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.55;
+        font-weight: 400;
+    }
 }
