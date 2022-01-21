@@ -1,0 +1,47 @@
+.ready {
+    height: 900px;
+    background-color: #f5fafe;
+    position: relative;
+    .wrapper2 {
+        height: 100%;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    &__img {
+        background-image: url(../img/ready/back.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+        height: 524px;
+        position: absolute;
+        left: 8%;
+    }
+    &__info {
+        position: relative;
+        z-index: 2;
+        left: 10%;
+        h2 {
+            color: #000000;
+            font-size: 48px;
+            font-family: 'Open Sans',Arial,sans-serif;
+            line-height: 1.55;
+            font-weight: 700;
+        }
+        p {
+            color: #000000;
+            font-size: 24px;
+            font-family: 'Open Sans',Arial,sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            margin: 10px 0 30px;
+        }
+    }
+    &__btn {
+
+    }
+}

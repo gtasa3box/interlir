@@ -1,0 +1,74 @@
+.footer {
+    padding-top: 75px;
+    padding-bottom: 90px;
+    background-color: #171717;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__req {
+        display: flex;
+        flex-direction: column;
+    }
+    &__logo {
+        width: 120px;
+        height: 22px;
+        margin-bottom: 40px;
+    }
+    span {
+        display: block;
+        color: #525252;
+        font-size: 14px;
+        line-height: 1.55;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 300;
+    }
+    &__mail {
+        transition: 0.3s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__number {
+        color: #525252;
+        font-size: 14px;
+        line-height: 1.55;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 700;
+        transition: 0.3s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__navigate {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        color: #525252;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+        font-size: 16px;
+        line-height: 1.35;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 600;
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        &-elem {
+            margin-bottom: 10px;
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.55;
+            font-family: 'Open Sans',Arial,sans-serif;
+            font-weight: 300;
+            width: 160px;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
