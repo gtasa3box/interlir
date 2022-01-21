@@ -5,19 +5,22 @@
         max-width: 600px;
         padding: 0 10px;
     }
-    @media (min-width:601px) and (max-width:899px) {
-        max-width: 728px;
+    @media (min-width:601px) and (max-width:1240px) {
+        padding: 0 20px;
     }
-    @media (min-width:900px) and (max-width:1099px) {
-        max-width: 890px;
-    }
-    @media (min-width:1100px) and (max-width:1619px) {
-        // max-width: 992px;
-        max-width: 1160px;
-    }
-    @media (min-width:1100px) and (max-width:1220px) {
-        padding: 0 10px;
-    }
+    // @media (min-width:601px) and (max-width:899px) {
+    //     max-width: 728px;
+    // }
+    // @media (min-width:900px) and (max-width:1099px) {
+    //     max-width: 890px;
+    // }
+    // @media (min-width:1100px) and (max-width:1619px) {
+    //     // max-width: 992px;
+    //     max-width: 1160px;
+    // }
+    // @media (min-width:1100px) and (max-width:1220px) {
+    //     padding: 0 10px;
+    // }
 }
 .wrapper2 {
     max-width: 1000px;
