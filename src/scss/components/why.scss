@@ -2,30 +2,40 @@
     min-height: 728px;
     height: 100vh;
     background-color: #f5fafe;
-    &__title {
-        color: #000000;
-        font-size: 46px;
-        font-family: 'Open Sans',Arial,sans-serif;
-        line-height: 1.2;
-        font-weight: 700;
+    position: relative;
+    z-index: 1;
+    @media (max-width:600px) {
+        height: auto;
+        padding-bottom: 40px;
     }
     &__title {
-        color: black;
-        font-size: 40px;
-        font-family: 'Open Sans',Arial,sans-serif;
-        line-height: 1.2;
-        font-weight: 700;
-        margin: 40px 0 50px;
+        margin-bottom: 50px;
+        @media (max-width:420px) {
+            margin-bottom: 30px;
+            br {
+                display: none;
+            }
+        }
     }
     &__grid {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @media (max-width:900px) {
+            flex-direction: column;
+        }
     }
     &__elem {
         width: 45%;
         display: flex;
         margin-bottom: 40px;
+        @media (max-width:900px) {
+            width: 100%;
+        }
+        @media (max-width:600px) {
+            margin-bottom: 20px;
+            align-items: center;
+        }
     }
     &__img {
         background-size: contain;
@@ -34,6 +44,14 @@
         width: 150px;
         height: 150px;
         flex: none;
+        @media (max-width:600px) {
+            width: 120px;
+            height: 120px;
+        }
+        @media (max-width:420px) {
+            width: 80px;
+            height: 80px;
+        }
     }
     &__info {
 
@@ -46,6 +64,13 @@
         font-weight: 700;
         letter-spacing: 2.5px;
         margin-bottom: 20px;
+        @media (max-width:600px) {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        @media (max-width:420px) {
+            margin-bottom: 5px;
+        }
     }
     &__text {
         color: #000000;
@@ -53,5 +78,8 @@
         font-family: 'Open Sans',Arial,sans-serif;
         line-height: 1.55;
         font-weight: 400;
+        @media (max-width:600px) {
+            font-size: 12px;
+        }
     }
 }
