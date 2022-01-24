@@ -1,6 +1,15 @@
 .nav {
     display: flex;
     justify-content: space-between;
+    @media (max-width:980px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
     &__elem {
         position: relative;
         a {
@@ -14,6 +23,11 @@
             padding: 15px;
             transition: 0.3s ease;
             cursor: pointer;
+            @media (max-width:980px) {
+                font-size: 68px;
+                line-height: 1.17;
+                margin-bottom: 20px;
+            }
             &:hover {
                 opacity: 0.8;
             }
@@ -42,6 +56,17 @@
                 &:before {
                     transform: translateY(-50%) rotate(180deg);
                 }
+            }
+        }
+        &_mob-hidden {
+            @media (max-width:980px) {
+                display: none;
+            }
+        }
+        &_mob-visible {
+            display: none;
+            @media (max-width:980px) {
+                display: block;
             }
         }
     }

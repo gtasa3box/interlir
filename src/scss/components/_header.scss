@@ -30,7 +30,14 @@
     &__soc {
         margin: 0 30px;
         @media (max-width:980px) {
-
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 70px;
+            margin: 0;
         }
         .linkidin {
             display: block;
@@ -42,6 +49,9 @@
             height: 30px;
             cursor: pointer;
             transition: 0.3s ease;
+            @media (max-width:980px) {
+                filter: invert(100%);
+            }
             &:hover {
                 transform: rotate(360deg);
             }
@@ -49,7 +59,14 @@
     }
     &__lang {
         @media (max-width:980px) {
-
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 20px;
         }
         a {
             color: white;
@@ -58,6 +75,11 @@
             padding: 0 10px;
             font-family: 'Open Sans',Arial,sans-serif;
             font-size: 16px;
+            @media (max-width:980px) {
+                font-size: 12px;
+                line-height: 1.55;
+                padding: 0 2px;
+            }
             &:hover {
                 opacity: 0.8;
             }
