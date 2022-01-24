@@ -7,6 +7,13 @@
     letter-spacing: 2.5px;
     padding-top: 120px;
     margin-bottom: 40px;
+    @media (max-width:1199px) {
+        font-size: 11px;
+    }
+    @media (max-width:600px) {
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
     &-block {
         color: #000000;
         font-size: 40px;
@@ -15,14 +22,18 @@
         font-weight: 700;
         max-width: 801px;
         margin-top: 40px;
-    }
-}
-.title-block {
-    font-size: 40px;
-    font-family: 'Open Sans',Arial,sans-serif;
-    line-height: 1.2;
-    font-weight: 700;
-    &_white {
-        color: white;
+        @media (max-width:1199px) {
+            font-size: 36px;
+        }
+        @media (max-width:600px) {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+        @media (max-width:420px) {
+            font-size: 22px
+        }
+        &_white {
+            color: white;
+        }
     }
 }
