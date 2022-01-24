@@ -9,9 +9,16 @@
         top: 45%;
         left: 50%;
         transform: translate(-50%,-50%);
+        z-index: 11;
     }
     &__elem {
         position: relative;
+        @media (max-width:980px) {
+            margin-bottom: 20px;
+            &:first-child {
+                opacity: .7;
+            }
+        }
         a {
             color: #ffffff;
             font-weight: 400;
@@ -26,7 +33,6 @@
             @media (max-width:980px) {
                 font-size: 68px;
                 line-height: 1.17;
-                margin-bottom: 20px;
             }
             &:hover {
                 opacity: 0.8;
