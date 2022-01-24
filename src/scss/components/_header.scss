@@ -79,6 +79,9 @@
                 font-size: 12px;
                 line-height: 1.55;
                 padding: 0 2px;
+                &:last-child {
+                    text-transform: uppercase;
+                }
             }
             &:hover {
                 opacity: 0.8;
