@@ -2,13 +2,25 @@
     padding-top: 75px;
     padding-bottom: 90px;
     background-color: #171717;
+    .wrapper {
+        @media (max-width:960px) {
+            max-width: 640px;
+        }
+    }
     &__content {
         display: flex;
         justify-content: space-between;
+        @media (max-width:960px) {
+            flex-wrap: wrap;
+        }
     }
     &__req {
         display: flex;
         flex-direction: column;
+        @media (max-width:960px) {
+            width: 100%;
+            margin-bottom: 50px;
+        }
     }
     &__logo {
         width: 120px;
@@ -43,6 +55,9 @@
     &__navigate {
         display: flex;
         justify-content: space-between;
+        @media (max-width:960px) {
+            width: 100%;
+        }
     }
     &__title {
         color: #525252;
@@ -57,6 +72,9 @@
     &__nav {
         display: flex;
         flex-direction: column;
+        @media (max-width:960px) {
+            width: 49%;
+        }
         &-elem {
             margin-bottom: 10px;
             color: #ffffff;
@@ -69,6 +87,11 @@
             &:hover {
                 opacity: 0.8;
             }
+        }
+    }
+    &__soc {
+        @media (max-width:960px) {
+            width: 49%;
         }
     }
 }
