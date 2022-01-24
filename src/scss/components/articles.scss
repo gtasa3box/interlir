@@ -1,9 +1,15 @@
 .articles {
     padding: 105px 40px 25px;
+    @media (max-width:800px) {
+        padding: 30px 20px 30px;
+    }
     &__grid {
         display: flex;
         justify-content: space-between;
         width: 100%;
+        @media (max-width:800px) {
+            flex-wrap: wrap;
+        }
     }
     &__smallgrid {
         display: flex;
@@ -11,6 +17,9 @@
         flex-wrap: wrap;
         align-content: space-between;
         width: 49%;
+        @media (max-width:800px) {
+            width: 100%;
+        }
     }
     &__img {
         width: 100%;
@@ -46,14 +55,38 @@
         &_small {
             width: 49%;
             height: 320px;
+            @media (max-width:800px) {
+                width: 50%;
+            }
+            @media (max-width:600px) {
+                height: 250px;
+            }
+            @media (max-width:420px) {
+                width: 100%;
+                margin-bottom: 5px;
+            }
         }
         &_big {
             height: 658px;
             width: 49%;
+            @media (max-width:800px) {
+                width: 100%;
+            }
+            @media (max-width:600px) {
+                height: 250px;
+                margin-bottom: 5px;
+            }
         }
         &_middle {
             height: 320px;
             width: 100%;
+            @media (max-width:600px) {
+                height: 250px;
+                margin-top: 5px;
+            }
+            @media (max-width:420px) {
+                margin-top: 0;
+            }
         }
         &:hover {
             a {
@@ -68,6 +101,12 @@
         font-family: 'Open Sans',Arial,sans-serif;
         font-weight: 600;
         pointer-events: none;
+        @media (max-width:1199px) {
+            font-size: 20px;
+        }
+        @media (max-width:420px) {
+            font-size: 18px;
+        }
     }
     &__text {
         color: #fff;
@@ -77,5 +116,16 @@
         font-weight: 300;
         line-height: 1.55;
         pointer-events: none;
+        @media (max-width:1199px) {
+            font-size: 14px;
+        }
+        @media (max-width:600px) {
+            margin-top: 5px;  
+            font-size: 12px;
+        }
+        @media (max-width:420px) {
+            font-size: 12px;
+            margin-top: 5px;
+        }
     }
 }
