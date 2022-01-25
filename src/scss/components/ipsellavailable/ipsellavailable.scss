@@ -3,7 +3,16 @@
     padding-bottom: 120px;
     background-color: #ffffff;
     &__content {
+        @media (max-width:900px) {
+            overflow: scroll;
+        }
         table {
+            @media (max-width:900px) {
+                min-width: 960px;
+            }
+            @media (max-width:600px) {
+                min-width: 640px;
+            }
             thead {
                 th {
                     border: 0 solid #ccc;
@@ -17,6 +26,10 @@
                     color: #000;
                     font-size: 18px;
                     line-height: 1.55;
+                    @media (max-width:600px) {
+                        font-size: 14px;
+                        line-height: 1.45;
+                    }
                 }
             }
             tr {
@@ -35,6 +48,10 @@
                 font-weight: 300;
                 font-size: 18px;
                 line-height: 1.55;
+                @media (max-width:600px) {
+                    font-size: 14px;
+                    line-height: 1.45;
+                }
             }
         }
     }
