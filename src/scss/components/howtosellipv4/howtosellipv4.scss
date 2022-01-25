@@ -11,6 +11,9 @@
     &__title {
         text-align: center;
         margin-bottom: 40px;
+        @media (max-width:1199px) {
+
+        }
     }
     &__grid {
         position: relative;
@@ -22,6 +25,15 @@
             width: 10px;
             height: 500px;
             background-color: #e0e0e0;
+            @media (max-width:1040px) {
+                height: 470px;
+            }
+            @media (max-width:790px) {
+                left: 11%;
+            }
+            @media (max-width:600px) {
+                display: none;
+            }
         }
     }
     &__elem {
@@ -29,6 +41,14 @@
         padding-left: 170px;
         position: relative;
         height: 120px;
+        @media (max-width:1040px) {
+            padding-left: 140px;
+        }
+        @media (max-width:600px) {
+            height: auto;
+            padding-left: 120px;
+            margin-bottom: 40px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -42,16 +62,49 @@
             height: 84px;
             border: 2px solid black;
             border-radius: 50%;
+            @media (max-width:1040px) {
+                width: 60px;  
+                height: 60px;
+                left: 7.3%;
+            }
+        }
+        &_2 {
+            &:before {
+                background-image: url(../img/pages/howtosellipv4/2.svg);
+            }
+        }
+        &_3 {
+            &:before {
+                background-image: url(../img/pages/howtosellipv4/3.svg);
+            }
+        }
+        &_4 {
+            &:before {
+                background-image: url(../img/pages/howtosellipv4/4.svg);
+            }
         }
         ul {
             list-style-type: disc;
             padding-left: 20px;
+            @media (max-width:600px) {
+                padding-left: 15px;
+            }
             li {
                 color: #000000;
                 font-size: 15px;
                 font-family: 'Arial',Arial,sans-serif;
                 line-height: 1.55;
                 font-weight: 400;
+                @media (max-width:1199px) {
+                    font-size: 13px;
+                }
+                @media (max-width:650px) {
+                    font-size: 11px;
+                }
+                @media (max-width:600px) {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -61,5 +114,14 @@
         font-family: 'Arial',Arial,sans-serif;
         line-height: 1.55;
         font-weight: 700;
+        @media (max-width:1199px) {
+            font-size: 20px;
+        }
+        @media (max-width:650px) {
+            font-size: 16px;
+        }
+        @media (max-width:600px) {
+            margin-bottom: 10px;
+        }
     }
 }
