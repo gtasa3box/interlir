@@ -36,4 +36,17 @@
             color: white;
         }
     }
+    &_doppage {
+        font-size: 52px;
+        line-height: 1.23;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 600;
+        color: #000;
+        @media (max-width:1199px) {
+            font-size: 36px;
+        }
+        @media (max-width:600px) {
+            font-size: 28px;
+        }
+    }
 }
