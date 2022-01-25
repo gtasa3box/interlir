@@ -34,6 +34,9 @@
                 font-size: 68px;
                 line-height: 1.17;
             }
+            @media (max-width:600px) {
+                font-size: 32px;
+            }
             &:hover {
                 opacity: 0.8;
             }

@@ -3,3 +3,11 @@ body {
         overflow: hidden;
     }
 }
+.anchor {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
