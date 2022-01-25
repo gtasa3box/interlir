@@ -39,4 +39,16 @@
             border-color: black;
         }
     }
+    &_green {
+        color: #ffffff;
+        background-color: #13ce66;
+        border-color: #13ce66;
+        width: 135px;
+        height: 45px;
+        &:hover {
+            background-color: #ffffff;
+            color: #13ce66;
+            border-color: #13ce66;
+        }
+    }
 }
