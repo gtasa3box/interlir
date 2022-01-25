@@ -22,4 +22,21 @@
         color: #1926e0;
         border-color: #1926e0;
     }
+    &_yellow {
+        color: #000000;
+        background-color: #fff700;
+        border-color: #fff700;
+        width: 164px;
+        height: 50px;
+        @media (max-width:600px) {
+            font-size: 12px;
+            width: 120px;
+            height: 30px;
+        }
+        &:hover {
+            background-color: black;
+            color: #fff700;
+            border-color: black;
+        }
+    }
 }
