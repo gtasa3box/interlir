@@ -1,0 +1,53 @@
+.grid-lirsupport {
+    background-color: #f5fafe;
+    padding-top: 135px;
+    padding-bottom: 165px;
+    &__content {
+        
+    }
+    &__grid {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    &__elem {
+        padding: 30px 30px 40px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        box-shadow: rgba(0,0,0,0.1) 0px 0px 10px 0px;
+        // height: 359px;
+        width: 49%;
+        padding-bottom: 100px;
+    }
+    &__title {
+        font-size: 22px;
+        line-height: 1.35;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    &__list {
+        list-style: inside;
+        li {
+            font-size: 18px;
+            line-height: 1.55;
+            font-family: 'Open Sans',Arial,sans-serif;
+            font-weight: 300;
+            color: #000;
+        }
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 1.55;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 300;
+        color: #000;
+    }
+    &__smalltitle {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.55;
+        font-family: 'Open Sans',Arial,sans-serif;
+    }   
+}
