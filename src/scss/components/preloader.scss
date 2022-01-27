@@ -1,0 +1,30 @@
+.t360__bar {
+    background-color: #030bff;
+}
+.t360__progress {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999999999;
+}
+.t360__bar {
+    width: 0;
+    transition: all ease-in-out .3s;
+    height: 2px;
+}
+.t360__barprogresshidden {
+    opacity: 0;
+    width: 100%;
+}
+.t360__barprogress {
+    width: 70%;
+    transition: all ease-in-out .3s;
+}
+.site-container {
+    opacity: 0;
+    transition: opacity ease-in-out .5s;
+}
+.t-records_visible {
+    opacity: 1;
+}

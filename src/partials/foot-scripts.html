@@ -1,6 +1,66 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- preloads -->
-<style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: rgb(145, 102, 247) url('img/load.svg') center center no-repeat;background-size:41px;}</style>
-<div id="hellopreloader"><div id="hellopreloader_preload"></div></div>
-<script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},300);};</script>
-<!--end preloads -->
+
+<!-- <script>
+    window.intercomSettings = {
+      app_id: "da83sgtu",
+      custom_launcher_selector:'.open_intercom'
+  
+    };
+  
+  
+  // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/da83sgtu'
+  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}
+  else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');
+  s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/da83sgtu';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent)
+  {w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+  
+  
+  </script>
+
+<script>
+// We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/da83sgtu'
+(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/da83sgtu';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+</script>
+<script type="text/javascript">window.dataLayer = window.dataLayer || [];</script> -->
+
+<!-- pre-load -->
+<script>
+$(document).ready(function() {
+    $(window).bind('pageshow', function(event) {
+    if (event.originalEvent.persisted) {
+        $('.site-container').addClass('t-records_visible'); /* window.location.reload(); */
+    }
+    });
+    $(".site-container").attr('data-animationappear', 'off');
+    $(".site-container").css('opacity', '1');
+    $('.site-container').addClass('t-records_animated');
+    setTimeout(function() {
+    $('.site-container').addClass('t-records_visible');
+    }, 200);
+});
+</script>
+<script>
+$(document).ready(function() {
+    var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+    if (isSafari) {} else {
+    $("body").append('<div class="t360__progress"><div class="t360__bar"></div></div>');
+    setTimeout(function() {
+        $(".t360__bar").addClass("t360__barprogress");
+    }, 10);
+    }
+});
+$(window).on('load', function() {
+    $(".t360__bar").removeClass("t360__barprogress");
+    $(".t360__bar").addClass("t360__barprogressfinished");
+    setTimeout(function() {
+    $(".t360__bar").addClass("t360__barprogresshidden");
+    }, 20);
+    setTimeout(function() {
+    $(".t360__progress").hide();
+    }, 500);
+});
+</script>
+  
+<div class="t360__progress" style="display: none; position: absolute; z-index: 200; top: 0; left: 0; pointer-events: none;"><div class="t360__bar t360__barprogressfinished t360__barprogresshidden"></div></div>
+<!-- pre-load-end -->
+  
