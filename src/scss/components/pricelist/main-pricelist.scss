@@ -1,3 +1,110 @@
 .main-pricelist {
-    
+    background-color: #f5fafe;
+    &__content {
+        padding: 150px 0;
+        @media (max-width:600px) {
+            padding: 80px 0;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        text-align: center;
+        font-size: 64px;
+        line-height: 1.23;
+        font-family: 'Open Sans',Arial,sans-serif;
+        color: #000;
+        @media (max-width:960px) {
+            font-size: 42px;
+        }
+        @media (max-width:600px) {
+            font-size: 36px;
+        }
+    }
+    &__table {
+        margin: 165px 0 210px;
+        @media (max-width:960px) {
+            margin: 100px 0 130px;
+        }
+        @media (max-width:600px) {
+            margin: 60px 0 120px;
+        }
+        &-title {
+            text-align: center;
+            font-size: 28px;
+            line-height: 1.17;
+            font-family: 'Open Sans',Arial,sans-serif;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 165px;
+            @media (max-width:960px) {
+                font-size: 22px;
+                margin-bottom: 100px;
+            }
+            @media (max-width:600px) {
+                font-size: 16px;
+                margin-bottom: 60px;
+            }
+        }
+        @media (max-width:900px) {
+            overflow: scroll;
+        }
+        table {
+            max-width: 960px;
+            margin: 0 auto;
+            @media (max-width:900px) {
+                min-width: 960px;
+            }
+            @media (max-width:600px) {
+                min-width: 640px;
+            }
+            thead {
+                th {
+                    border: 0 solid #ccc;
+                    border-width: 0px 0px 1px 0px;
+                    border-color: #000000;
+                    padding: 20px;
+                    vertical-align: top;
+                    text-align: left;
+                    font-family: 'Open Sans',Arial,sans-serif;
+                    font-weight: 600;
+                    color: #000;
+                    font-size: 18px;
+                    line-height: 1.55;
+                    @media (max-width:600px) {
+                        font-size: 14px;
+                        line-height: 1.45;
+                    }
+                }
+            }
+            tr {
+                &:nth-child(even) {
+                    background-color: #eeeeee;
+                }
+                &:nth-child(odd) {
+                    background-color: white;
+                }
+            }
+            thead {
+                tr {
+                    background-color: transparent !important;
+                }
+            }
+            td {
+                border: 0 solid #ccc;
+                border-width: 0px 0px 1px 0px;
+                vertical-align: top;
+                border-color: #d9d9d9;
+                color: #4d4c4c;
+                padding: 20px;
+                font-family: 'Open Sans',Arial,sans-serif;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 1.55;
+                @media (max-width:600px) {
+                    font-size: 14px;
+                    line-height: 1.45;
+                }
+            }
+        }
+    }
 }
