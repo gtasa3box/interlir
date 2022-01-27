@@ -1,0 +1,34 @@
+.main-contacts {
+    background-color: #f5fafe;
+    &__content {
+        padding: 150px 0 200px;
+        max-width: 760px;
+        margin: 0 auto;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 300;
+        color: #000;
+        font-size: 20px;
+        line-height: 1.55;
+        @media (max-width:1199px) {
+            font-size: 18px;
+            max-width: 620px;
+        }
+        @media (max-width:600px) {
+            font-size: 16px;
+            line-height: 1.45;
+            padding: 80px 0 80px;
+        }
+        strong {
+            font-weight: 700;
+            &:first-child {
+                font-size: 32px;
+            }
+        }
+        a {
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
