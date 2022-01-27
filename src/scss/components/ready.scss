@@ -33,7 +33,8 @@
         @media (max-width:600px) {
             width: 80%;
             height: 340px;
-            top: 33%;
+            top: 45%;
+            left: 50%;
         }
     }
     &__info {
@@ -72,6 +73,9 @@
             left: 60%;
             transform: translateX(-50%);
             top: 120%;
+        }
+        @media (max-width:600px) {
+            left: 50%;
         }
     }
 }

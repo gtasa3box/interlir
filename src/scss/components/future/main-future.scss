@@ -70,5 +70,11 @@
             margin-top: 20px;
             height: 200px;
         }
+        &_europe {
+            height: 506px;
+            @media (max-width:600px) {
+                height: 400px;
+            }
+        }
     }
 }
