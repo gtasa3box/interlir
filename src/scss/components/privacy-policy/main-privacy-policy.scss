@@ -1,42 +1,94 @@
 .main-privacy-policy {
+    padding: 180px 0;
+    background-color: #f5fafe;
     &__content {
-
+        max-width: 1160px;
+        margin: 0 auto;
     }
     &__info {
 
     }
     &__title {
-
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.55;
+        font-family: 'Open Sans',Arial,sans-serif;
+        color: #000;
     }
     &__text {
-
+        max-width: 760px;
+        font-size: 20px;
+        line-height: 1.55;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 300;
+        color: #000;
     }
     &__questions {
-
+        padding: 150px 0 0;
     }
 }
 
 .question {
     &__q {
-
-    }
-    &__question__left {
-        &_white {
-
+        display: flex;
+        justify-content: flex-start;
+        background: #222;
+        color: white;
+        margin-bottom: 30px;
+        padding: 28px 40px 27px;
+        border-radius: 40px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/q.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            left: 17px;
+            bottom: -17px;
+            width: 33px;
+            height: 24px;
         }
     }
-    &__question__right {
-
+    &__left {
+        width: 108px;
+        font-size: 12px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        font-weight: 600;
+        letter-spacing: 2.5px;
+        padding-top: 8px;
+        padding-right: 15px;
+    }
+    &__right {
+        width: 80%;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.55;
+        font-family: 'Open Sans',Arial,sans-serif;
     }
     &__answer {
-
+        display: flex;
+        justify-content: flex-start;
+        background: #eee;
+        margin-bottom: 30px;
+        padding: 28px 40px 27px;
+        border-radius: 40px;
+        position: relative;
     }
     &__title {
-
     }
     &__text {
+        font-weight: 300;
         strong {
-
+            font-weight: 700;
+        }
+        a {
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
 }
