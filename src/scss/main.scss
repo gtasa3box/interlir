@@ -8,6 +8,7 @@
 @import "./components/title";
 @import "./components/burger";
 @import "./components/preloader";
+@import "./components/dropdown";
 
 @import "./components/header";
 @import "./components/footer";
@@ -46,3 +47,6 @@
 
 //privacy-policy
 @import "./components/privacy-policy/main-privacy-policy";
+
+//tos
+@import "./components/tos/main-tos";

@@ -1,0 +1,52 @@
+.main-tos {
+    padding: 180px 0 80px;
+    background-color: #f5fafe;
+    &__content {
+
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 1.55;
+        font-family: 'Open Sans',Arial,sans-serif;
+        max-width: 722px;
+        margin-bottom: 60px;
+    }
+    &__elem {
+        &-title {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 1.55;
+            font-family: 'Open Sans',Arial,sans-serif;
+            background-color: white;
+            position: relative;
+            padding: 38px 0 36px;
+            max-width: 960px;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                left: -100%;
+                top: 0;
+                height: 100%;
+                background-color: white;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                right: -100%;
+                top: 0;
+                height: 100%;
+                background-color: white;
+            }
+        }
+        .wrapper {
+            &:last-child {
+                display: flex;
+                flex-direction: column;
+                padding: 30px 0;
+            }
+        }
+    }
+}

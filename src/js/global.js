@@ -22,3 +22,9 @@ $('#nav-about').click(function() {
     $('.burger').removeClass('active');
     }
 );
+
+//dropdown-content 
+$('.dropdown__title').on('click', function(){
+    $(this).toggleClass('active') 
+    $($(this).data('target')).stop(true, false).slideToggle()  
+});
