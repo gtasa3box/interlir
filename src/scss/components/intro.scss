@@ -112,8 +112,14 @@
         @media (max-width:1640px) {
             right: -10%;
         }
+        @media (max-width:1509px) {
+            right: -20%;
+        }
         @media (max-width:1409px) {
             right: -20%;
+        }
+        @media (max-width:1300px) {
+            right: -25%;
         }
         @media (max-width:1199px) {
             width: 480px;

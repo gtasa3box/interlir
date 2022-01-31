@@ -25,6 +25,12 @@
         height: 524px;
         position: absolute;
         left: 8%;
+        @media (max-width:1632px) {
+            left: 4%;
+        }
+        @media (max-width:1330px) {
+            left: 0;
+        }
         @media (max-width:1199px) {
             left: 40%;
             transform: translateX(-50%);
