@@ -5,6 +5,7 @@
     background-position: center center;
     background-attachment: scroll;
     position: relative;
+    overflow: hidden;
     &__title {
         margin: 40px 0 50px;
         @media (max-width:600px) {
@@ -69,6 +70,33 @@
         }
         @media (max-width:600px) {
             left: 62%;
+        }
+        &_get-your-network {
+            box-shadow: 10px 10px 0px 0px rgb(140,140,140);
+            height: 487px;
+            right: -300px;
+            top: 50%;
+            @media (max-width:1844px) {
+                right: -30%;
+            }
+            @media (max-width:1600px) {
+                right: -30%;
+            }
+            @media (max-width:1199px) {
+                width: 578px;
+                height: 328px;
+                right: -30%;
+            }
+            @media (max-width:1059px) {
+                top: 80%;
+                right: initial;
+                left: 50%;
+                transform: translate(-50%,0);
+                background-position: center;
+            }
+            @media (max-width:600px) {
+                left: 62%;
+            }
         }
     }
 }

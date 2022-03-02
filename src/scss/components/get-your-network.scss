@@ -1,0 +1,18 @@
+.get-your-network {
+    background-image: url(../img/get-your-network/back.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 220px;
+    &__content {
+        position: relative;
+        z-index: 2;
+    }
+    &__titleinfo {
+        margin-top: 40px;
+    }
+    &__btn {
+        margin-top: 30px;
+    }
+}
