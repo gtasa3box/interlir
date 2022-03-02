@@ -21,17 +21,19 @@
             background-size: cover;
             width: 1060px;
             height: 994px;
-            left: 150px;
+            left: 200px;
             top: 70px;
+            pointer-events: none;
             @media (max-width:1199px) {
                 width: 600px;
                 height: 550px;
                 left: initial;
                 right: 0;
-                top: 40%;
+                top: 60%;
             }
             @media (max-width:960px) {
                 top: 50%;
+                right: -100px;
             }
             @media (max-width:650px) {
                 right: -10%;
@@ -51,6 +53,63 @@
                 height: 290px;
             }
         }
+    }
+    .title-block {
+        max-width: none;
+    }
+    &__title-info {
+        color: #000000;
+        font-size: 14px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.55;
+        font-weight: 400;
+        max-width: 900px;
+        margin-top: 30px;
+    }
+    &__lists {
+        max-width: 900px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 10px;
+        position: relative;
+        z-index: 2;
+        @media (max-width:960px) {
+            grid-template-columns: repeat(1, 1fr);
+            
+        }
+    }
+    &__list-title {
+        color: #000000;
+        font-size: 15px;
+        font-family: 'Open Sans',Arial,sans-serif;
+        line-height: 1.55;
+        font-weight: 700;
+        margin: 15px 0;
+    }
+    &__list {
+        @media (max-width:960px) {
+            max-width: 600px;
+        }
+        p {
+            color: #000000;
+            font-size: 14px;
+            font-family: 'Open Sans',Arial,sans-serif;
+            line-height: 1.55;
+            font-weight: 400;
+            a {
+                color: #ff8562;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    &__btns {
+        margin-top: 50px;
+        position: relative;
+        z-index: 2;
     }
     &__text {
         color: #000000;
