@@ -18,6 +18,9 @@
     height: 55px;
     flex: none;
     cursor: pointer;
+    @media (max-width:420px) {
+        height: 40px;
+    }
     &:hover {
         background-color: white;
         color: #1926e0;
